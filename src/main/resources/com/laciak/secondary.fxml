@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.laciak.SecondaryController">
+   <children>
+      <Button fx:id="cancelButton" layoutX="180.0" layoutY="458.0" mnemonicParsing="false" text="Cancel" />
+      <Button fx:id="editButton" layoutX="180.0" layoutY="488.0" mnemonicParsing="false" text="Edit Application" />
+      <TextField fx:id="textFieldCompany" layoutX="14.0" layoutY="60.0" prefHeight="25.0" prefWidth="174.0" />
+      <TextField fx:id="textFieldPosition" layoutX="14.0" layoutY="113.0" prefHeight="25.0" prefWidth="174.0" />
+      <TextArea fx:id="textAreaDescription" layoutX="14.0" layoutY="168.0" prefHeight="110.0" prefWidth="258.0" />
+      <DatePicker fx:id="datePickerApplication" editable="false" layoutX="14.0" layoutY="310.0" prefHeight="25.0" prefWidth="174.0" />
+      <DatePicker fx:id="datePickerResponse" disable="true" editable="false" layoutX="14.0" layoutY="365.0" />
+      <CheckBox fx:id="checkBoxResponseDate" layoutX="14.0" layoutY="343.0" mnemonicParsing="false" text="Response date (optional)" />
+      <CheckBox fx:id="checkBoxTest" layoutX="14.0" layoutY="397.0" mnemonicParsing="false" text="Test" />
+      <ComboBox fx:id="comboBoxTypeOfApplication" layoutX="14.0" layoutY="445.0" prefWidth="150.0" />
+      <ComboBox fx:id="comboBoxTypeOfResponses" layoutX="14.0" layoutY="500.0" prefWidth="150.0" />
+      <Label layoutX="14.0" layoutY="43.0" text="Company name:" />
+      <Label layoutX="14.0" layoutY="96.0" text="Position:" />
+      <Label layoutX="14.0" layoutY="151.0" text="Description (optional):" />
+      <Label layoutX="14.0" layoutY="286.0" text="Date of application:" />
+      <Label layoutX="14.0" layoutY="429.0" text="Type of application:" />
+      <Label layoutX="14.0" layoutY="483.0" text="Type of response:" />
+      <Label fx:id="labelID" disable="true" layoutX="14.0" layoutY="483.0" visible="false" />
+   </children>
+</AnchorPane>
