@@ -125,7 +125,7 @@ public class PrimaryController implements Initializable {
             String company = textFieldCompany.getText();
             String position = textFieldPosition.getText();
             String description = textAreaDescription.getText();
-            LocalDate applicationDate = datePickerApplication.getValue();
+            LocalDate applicationDate = datePickerApplication.getValue().plusDays(1);
             LocalDate responseDate = datePickerResponse.getValue();
             Boolean test = checkBoxTest.isSelected();
             String typeOfApplication = comboBoxTypeOfApplication.getSelectionModel().getSelectedItem();
